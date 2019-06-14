@@ -1,0 +1,115 @@
+// balloon.css
+// .tip[aria-label]:after
+.tip{
+  position:relative;
+}
+.tip::after{
+  filter:alpha(opactiy=0);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity:0;
+  pointer-events:none;
+  transition:all 0.18s ease-out 0.18s;
+  // font-family: sans-serif !important;
+  // font-weight: normal;
+  // font-style: normal !important;
+  // text-shadow: none;
+  font-size:12px;
+  background:#222;// rgba(17,17,17,0.9)
+  border-radius:4px;
+  color:#fff;
+  box-shadow:0 0 9px rgba(0,0,0,.1);
+  content:attr(aria-label);
+  padding:.5em 1em;
+  position:absolute;
+  white-space:nowrap;
+  z-index:10;
+}
+
+// tip - TOP
+// .tip[aria-label].tipB::after
+.tip.tipT::after{
+  bottom:100%;
+  left:50%;
+  margin-bottom:2px;// 5px
+  transform:translate(-50%,10px);
+  transform-origin:top;
+}
+
+// tip - TOP LEFT
+.tip.tipT.tl::after{
+  left:0;
+}
+
+// tip - TOP RIGHT
+.tip.tipT.tr::after{
+  left:auto;
+}
+
+// tip - BOTTOM
+.tip.tipB::after{
+  left:50%;
+  margin-top:5px;// 11px
+  top:100%;
+  transform:translate(-50%,-10px);
+}
+
+// tip - RIGHT
+// .tip[aria-label].tipR::after
+.tip.tipR::after{
+  left:100%;
+  margin-left:5px;
+  top:50%;
+  transform:translate(-10px,-50%);
+}
+
+// tip - LEFT
+// .tip[aria-label].tipL::after
+.tip.tipL::after{
+  right:100%;
+  margin-right:5px;// 11px
+  top:50%;
+  transform:translate(10px,-50%);
+}
+
+// tip - TOP
+// .tip[aria-label].tipB:focus::after,
+// .tip[aria-label].tipB:hover::after
+.tip.tipT:hover::after{
+  transform:translate(-50%,0);
+}
+
+// tip - BOTTOM
+.tip.tipB:hover::after{
+  transform:translate(-50%,0);
+}
+
+// tip - RIGHT
+// .tip[aria-label].tipR:hover::after
+.tip.tipR:hover::after{
+  transform:translate(0,-50%);
+}
+
+// tip - LEFT
+// .tip[aria-label].tipL:hover::after
+.tip.tipL:hover::after{
+  transform:translate(0,-50%);
+}
+
+// .tip[aria-label]:hover::after
+.tip:hover::after{
+  filter:alpha(opactiy=100);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity:1;
+  // pointer-events:auto;
+}
+
+// OPTION FOR hide tip when focus
+// .tip:focus::after
+
+// OPTION FOR hide tip when dropdown show / open
+.show > .tip::after,
+.show > .tip:hover::after{
+  transition:none;
+  opacity:0;
+  transform:none;
+}

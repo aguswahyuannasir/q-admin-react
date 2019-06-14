@@ -1,0 +1,13 @@
+dependencies OPTIONS:
+1.  "ckeditor4-react": "^1.0.0-beta"
+2.  "react-draft-wysiwyg": "^1.13.2"
+3.  "match-sorter"
+4.  
+5.  
+
+dependencies DEV ONLY:
+1.  'starwars-names'
+2.  "emotion"
+3.  "react-emotion"
+4.  
+5.  

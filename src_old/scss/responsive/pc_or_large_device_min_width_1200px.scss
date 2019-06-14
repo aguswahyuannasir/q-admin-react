@@ -1,0 +1,49 @@
+// PC / Large Device
+@media (min-width: 1200px){
+  // .container{
+  //   max-width: 1150px;// 1200px
+  // }
+
+  // search form in NavMain
+  // .findMain{
+  // 	position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   margin: 0 auto;
+  //   width: 24vw;
+  // }
+
+  // .btnFindMain{
+  //   display:none;
+  // }
+
+// btn app
+	.btn-group-app{
+		width:60%;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+  // HELPER
+  // sizing:
+  .w-35-1200 {
+    width: 35%;
+  }
+
+  .w-75-1200{
+  	width: 75% !important;
+  }
+}
+// END PC / Large Device
+
+@media (min-width: 768px){
+  .offcanvas-collapse{
+    position: relative;
+  }
+
+  // HELPER
+  // sizing:
+  .w-75-768{
+  	width: 75% !important;
+  }
+}

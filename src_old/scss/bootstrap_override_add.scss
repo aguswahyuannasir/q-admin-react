@@ -1,0 +1,244 @@
+// CUSTOM var
+// $main-color: #FFC000 !default;
+$bg-body: #f2f7fa !default;
+$hover-bg-lightblue: #c9e9f9 !default;
+
+// Bootstrap Override & Adm
+button:focus{
+  outline: none;
+}
+
+select:not([disabled]),
+.btn:not([disabled]),
+.dropdown-item,
+.nav-link,
+[role="button"]{
+	cursor: pointer;
+}
+
+.btn-light,
+.btn-light:hover{
+	border-color: #ccc;
+}
+
+a.disabled{
+  pointer-events: none;
+}
+.btn[disabled]{
+  cursor: not-allowed;
+}
+
+label{
+  font-family: inherit !important;
+}
+
+label.btn,
+label.dropdown-item{
+	margin-bottom:0;
+}
+
+.custom-switch,
+.custom-switch label{
+  user-select:none;
+  cursor: pointer;
+}
+
+.card-header,
+.card-footer,
+.modal-header,
+.modal-footer{
+	padding:0.5rem 0.75rem;
+}
+
+// OPTION
+textarea{
+  min-height: 38px;
+}
+
+.btn-fff{
+	background-color: #fff;
+}
+// OPTION
+// .btn-fff:active{
+// 	background-color: #ccc;
+// }
+
+// Button style:
+// .btn,
+// .navbar-toggler,
+// .nav-pills .nav-link {
+// 	box-shadow: 0 1.5px 0 rgba(0,0,0,.4);
+// 	top: 0;
+// 	position: relative;
+// }
+// .btn,
+// .navbar-toggler,
+// .btn:active {
+// 	transition: all 250ms ease;
+// }
+// .btn:active,
+// .navbar-toggler:active,
+// .nav-pills .nav-link:active {
+//   top: 3px;
+// }
+
+.navbar-toggler:focus{
+  outline: none;
+}
+a.navbar-toggler span{
+	pointer-events: none;
+}
+
+.i.badge{
+  display: inline-block;
+}
+
+// .nav-link {
+//   color: #fb6437;
+// }
+// .nav-link:hover {
+// 	color: #B83109;
+// }
+
+// CUSTOM .btn
+// .btn-hy{
+// 	background-color: $main-color;
+// }
+// .btn-hy:hover {
+//   color: #B83109;
+//   background-color: #e0a800;
+// }
+// *.btn-hy:focus {
+// 	// box-shadow: none;
+// 	box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
+// }
+
+*.btn-app{
+	display: inline-flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+*.btn-app{
+	padding-top: 0;
+	margin-top: 24px;
+
+	// color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+	// transition: all 0.15s ease-in-out;
+}
+*.btn-app.btn-lg{
+	margin-top: 27px;
+}
+
+.btn-app > .i {
+	width: 46px;
+	position: relative;
+  top: -5px;
+  margin-top: -20px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #FFC000;
+  border-radius: 50%;
+}
+.btn-app.btn-lg > .i {
+	width: 52px;
+  margin-top: -23px;
+}
+
+// FROM Semantic UI
+.btn-group-or{
+  display: inline-flex;
+  flex-direction: row;
+  // font-size: 0;
+  // vertical-align: baseline;
+}
+.btn-group-or .btn:first-child {
+  // border-left: none;
+  // margin-left: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group-or .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-or .btn{
+  flex: 1;// 1 0 auto
+  // border-radius: 0;
+  margin: 0;
+}
+
+.btn-group-or .or{
+	font-size: 0.75rem;
+	position: relative;
+  width: .3em;
+  // height: 2.57142857em;
+  z-index: 3;
+}
+.btn-group-or .or::before {
+	content: attr(title);// 'or'
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -.89285714em;
+  margin-left: -0.7rem;// -.89285714em
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 500rem;
+  background-color: #fff;
+  // text-shadow: none;
+  width: 1.5rem;// 1.78571429em
+  height: 1.5rem;// 1.78571429em
+  line-height: 1.4rem;// 1.78571429em
+  color: #999;// rgba(0,0,0,.4)
+  // font-style: normal;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px transparent inset;
+}
+
+// MUST change in Bootstrap core directly when production
+.nav-fill{
+  margin: 0 -15px;
+}
+.nav-fill .nav-item{
+  padding: 0 15px;
+}
+
+// .nav-pills .nav-link{
+//   color: #fb6437;
+//   background-color: $main-color;
+//   font-weight: 500;
+//   position: relative;
+//   transition: all 250ms ease;
+// }
+// .nav-pills .nav-link.active,
+// .nav-pills .show > .nav-link{
+//   color: #B83109;
+//   background-color: $main-color;
+// }
+// .nav-pills .nav-link:not(.active):hover{
+//   color: #B83109;
+//   background-color: #e0a800;
+// }
+// .nav-pills .nav-link.active::before,
+// .nav-pills .show > .nav-link::before{
+//   content: "";
+//   top: 100%;
+// 	left: 50%;
+// 	border: solid transparent;
+// 	content: " ";
+// 	height: 0;
+// 	width: 0;
+// 	position: absolute;
+// 	pointer-events: none;
+// 	border-color: rgba(255, 192, 0, 0);
+// 	border-top-color: #FFC000;
+// 	border-width: 10px;
+// 	margin-left: -10px;
+// }
+
+.bg-fff{
+	background-color: #fff;
+}

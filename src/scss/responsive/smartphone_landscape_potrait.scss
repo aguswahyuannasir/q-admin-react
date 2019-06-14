@@ -1,0 +1,248 @@
+/* FOR Smartphone Landscape & Potrait */
+@media (max-width:767px){
+  // OVERRIDE Bootstrap hover .btn
+  *.btn:hover {
+    color: inherit;
+    background-color: inherit;
+    // border-color: inherit;
+  }
+  *.btn-outline-light:hover {
+    color: $gray-100;// #f8f9fa
+  }
+  *.btn-fff:hover {
+    background-color: #fff;
+  }
+
+	// // button group vertical FOR share link to
+	// .btn-shareto{
+	//   position: fixed;
+	//   bottom: 15px;
+	//   left: 15px;// right
+	//   z-index: 7;
+	// }
+
+	// .btn-shareto.open{
+	// 	background: #fff;
+	// }
+
+	// .btn-shareto > .btn:not(.openShareTo){
+	// 	display: none;
+	// }
+
+	// .btn-shareto.open > .btn:not(.openShareTo){
+	// 	display: inline-block;
+	// }
+
+	// .btn-shareto .openShareTo{
+	//   border-radius: 0.25rem !important;
+	//   margin-top: 9px !important;
+	// }
+
+	// .btnFindMain{
+  //   margin-right: 9px;
+  // }
+
+	// Google Recaptcha
+  .g-recaptcha{
+    transform:scale(0.85);
+    transform-origin:0 0;
+  }
+
+// main-menu NavMainPage (WITH react router)
+	.page-menu body,
+	.page-menu #web{
+		display: flex;
+	  flex-direction: column;
+	}
+	.page-menu body{
+	  min-height: 100vh;
+	}
+	.page-menu #web{
+		flex: 1;
+	}
+
+	.page-menu #navMain{
+		flex: none;
+	}
+	.page-menu main.container{
+		padding-bottom: 0;
+		flex: 1;
+	  display: flex;
+	  flex-direction: column;
+		overflow: hidden;
+	}
+
+	.page-menu .offcanvas.page{
+		flex: 1;
+		overflow: hidden;
+	}
+
+	.offcanvas .nav .dropdown-toggle::after {
+	  float: right;
+	  margin-top: 7px;
+	}
+
+	// Drodown menu in offcanvas
+	.offcanvas .nav .dropdown-menu{
+		display: block;
+		position: fixed;
+	  top: 0;
+		left: 0;
+	  right: 0;
+		margin: 0;
+		float: none;
+		border: 0;
+	  border-radius: 0;
+		height: 100%;
+		overflow-x: hidden;
+		transform: translateX(100%);
+		pointer-events: none;
+		transition: transform ease-in-out .2s;
+	}
+	.offcanvas .nav .dropdown-menu.show{
+		pointer-events: auto;
+		transform: translateX(0);
+	}
+
+// remove content for style line
+  .content-no-767::before,
+  .content-no-767::after {
+    content: none;
+  }
+
+  // HELPER
+  // Spacing:
+	.p-xs-0 {
+	  padding: 0 !important;
+	}
+}
+/* END Smartphone Landscape & Potrait */
+
+// FROM Bootstrap 4 Example - Experiments (Offcanvas)
+// https://getbootstrap.com/docs/4.3/examples/offcanvas/
+@media (max-width: 991.98px){
+	.offcanvas{
+		display: flex !important;
+		align-items: baseline;
+		flex-direction: column;
+	  // padding-right: 1rem;
+	  // padding-left: 1rem;
+	  // overflow-y: auto;
+	  background: #FFE699;// $main-color | #fff
+	}
+	.offcanvas.page{
+		position: relative;
+		opacity: 0;
+		transform: translateX(100%);
+		transition: opacity ease-in-out .2s, transform ease-in-out .2s;
+	}
+
+  .page-menu .offcanvas.menuPage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    // overflow-y: auto;
+    z-index: 1051;
+  }
+
+	.offcanvas.page.show{
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.offcanvas.fullMenu{
+		position: fixed;
+		top: 60px;// 56px
+	  bottom: 0;
+	  left: 100%;
+		height: 100% !important;
+	  width: 100%;
+		padding-right: 1rem;
+	  padding-left: 1rem;
+		visibility: hidden;
+		overflow-y: auto;
+		transition-timing-function: ease-in-out;
+	  transition-duration: .15s; // .2s
+	  transition-property: left, visibility;
+		z-index: 3;
+	}
+	.offcanvas.show{
+	  left: 0;
+	  visibility: visible;
+	}
+
+	//.offcanvas.show ~ .dflex .navbar-toggler > span,
+	.page-menu .navbar-toggler > span{
+		background-image: none !important;
+		text-align: center;
+	}
+	//.offcanvas.show ~ .dflex .navbar-toggler > span::after,
+	.page-menu .navbar-toggler > span::after{
+		content: "\f2c0";// '✖'
+		line-height: normal;// 1 | 1.1
+	  font-size: 1.7rem;
+	}
+
+  // OPTION
+	.offcanvas .navbar-nav:first-child{
+		width: 100%;
+		order: 3;
+	}
+	// .offcanvas .findMain{
+		// width: 100%;
+	  // margin-top: 15px;
+	// }
+	.offcanvas .navbar-nav:last-child{
+		width: 100%;
+	  margin: 15px auto;
+	}
+
+// Main search in NavMain component id="navMain"
+	// .findMain{
+	// 	display: none;
+	// }
+	// .findMain.open,
+	// .findMain:focus-within{
+	// 	display: flex;
+	// 	position: fixed;
+	//   top: 0;
+	//   left: 0;
+	//   right: 0;
+	//   bottom: 0;
+	//   width: 100%;
+	//   height: 100%;
+	//   align-items: baseline;
+	//   background-color: #fff;//
+	//   z-index: 2;
+	// }
+
+	// .findMain .input-group-append{
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// }
+
+  // .menuPage .findMain .QdownShift{
+  //   position: static;
+  // }
+  .findMain .QdownShift .dropdown-menu {
+		left: 0;
+		margin: 0 auto;
+		border-radius: 0;
+		max-height: none;
+		// width: 100vw;
+    height: calc(100vh - 48px);
+    overflow-x: hidden;
+	}
+}
+
+// Google Recaptcha
+// @media screen and (max-height:575px){
+//   .g-recaptcha{
+//     transform:scale(0.80);
+//     transform-origin:0 0;
+//   }
+// }

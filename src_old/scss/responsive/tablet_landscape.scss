@@ -1,0 +1,37 @@
+/* FOR Tablet Landscape */
+@media (max-width: 1199px) and (min-width: 992px){
+  .watch-video .container{
+    max-width: 1200px;// DEFAULT = 1140px
+  }
+
+  // .page-detail main{
+  //   max-width: 960px;
+  // }
+
+	.modalSetImg .modal-dialog{
+	  max-width:95%;
+	}
+	
+	// HELPER
+	// Sizing:
+	.w-75-tab-l{
+		width: 75% !important;
+	}
+}
+/* END FOR Tablet Landscape */
+
+/*
+@media (min-width: 992px){
+  .watch-video .container{
+    max-width: 1200px;// DEFAULT = 1140px
+  }
+
+  // .page-detail main{
+  //   max-width: 960px;
+  // }
+
+	.modalSetImg .modal-dialog{
+	  max-width:95%;
+	}
+}
+*/

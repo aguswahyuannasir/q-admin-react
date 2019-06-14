@@ -1,0 +1,206 @@
+// ======= Helper =======
+// == Flex behaviors ==
+.dflex{
+  display: -ms-flexbox;
+  display: flex;
+}
+.d-inflex{
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+// Direction
+.flex-row-rev {
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.flex-col-rev {
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+// END Direction
+
+// Align items
+.ai-start {
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.ai-end {
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.ai-center {
+  -ms-flex-align: center;
+  align-items: center;
+}
+.ai-baseline {
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+.ai-stretch {
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+// END Align items
+
+// Justify content
+.jc-start {
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.jc-end {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.jc-center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.jc-between {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.jc-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+// END // Justify content
+
+// Custom Flex
+.flex-row-between-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+// END Custom Flex
+
+// Flex
+*.flexno{
+  flex:none;
+}
+*.flex1{
+	flex:1;
+}
+// END Flex
+// END == Flex behaviors ==
+
+// Typography
+.txt-c{
+  text-align: center;
+}
+.txt-r{
+  text-align: right;
+}
+
+.txt-cap{
+  text-transform: capitalize
+}
+
+.fw600 {
+  font-weight: 600;
+}
+.bold{
+  font-weight: bold !important;
+}
+
+.space{
+	position: relative;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.lh-inh,
+.i.lh-inh::before{
+  line-height: inherit;
+}
+
+.ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+// END Typography
+
+// Sizing
+.mw-auto{
+  min-width:auto;
+}
+
+.inblock-wauto{
+	display:inline-block;
+	width:auto;
+	vertical-align:middle;
+}
+// END Sizing
+
+.select-no{
+  user-select:none;
+}
+
+.ovhide{
+  overflow:hidden !important;
+}
+
+.resize-no{
+  resize: none;
+}
+
+// Background
+// .bg-app{
+//   background-color: $main-color;
+// }
+.bg-111{
+  background:#111;
+}
+// .bg-hover{
+//   background-color: $blue-hover;
+// }
+// END Background
+
+// Position
+*.t0-r0{
+  position: absolute;
+}
+
+*.left-auto{
+  left: auto;
+}
+
+*.t0-r0{
+  top:0;
+  right:0;
+}
+
+// Cursor
+// [draggable="false"]{
+//  user-select:none;
+// }
+.cpoin{
+  cursor:pointer;
+}
+.cdef{
+  cursor:default;
+}
+.chelp{
+  cursor:help !important;
+}
+// END Cursor
+
+*.zi-2{
+  z-index: 2;
+}
+
+// fonts:
+.navbar-brand,
+.fs1{
+  font-size: 1rem;
+}
+.fs2{
+  font-size: 1.5rem;
+}
