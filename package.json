@@ -27,7 +27,7 @@
     "react-helmet": "^5.2.1",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-virtualized": "^9.21.1",
     "reactstrap": "^8.0.0",
     "starwars-names": "^1.6.0",
